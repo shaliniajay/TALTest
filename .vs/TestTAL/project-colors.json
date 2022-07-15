@@ -1,0 +1,26 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "d4c1db54-0ad3-436f-a2e2-49afb9a32068": {
+      "ProjectGuid": "d4c1db54-0ad3-436f-a2e2-49afb9a32068",
+      "DisplayName": "TestTAL.Api",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "9f57a976-5f53-4487-b5bc-a0c428a29adc": {
+      "ProjectGuid": "9f57a976-5f53-4487-b5bc-a0c428a29adc",
+      "DisplayName": "TAL.Test",
+      "ColorIndex": 1
+    },
+    "18183fcf-e971-4c23-a03b-482cebe6c281": {
+      "ProjectGuid": "18183fcf-e971-4c23-a03b-482cebe6c281",
+      "DisplayName": "TAL.Test",
+      "ColorIndex": 2
+    }
+  },
+  "NextColorIndex": 3
+}
