@@ -32,9 +32,17 @@ namespace TestTAL.Controllers
             }
             catch (Exception e)
             {
-
+                // if can't get DB instance working log the issue and return hard coded data.
                 _logger.LogError(e.StackTrace);
-                return Problem();
+
+                var occupations = new List<Occupation>();
+                occupations.Add(new Occupation { OccupationID = 1, Name = "Cleaner", OccupationfactorID = 3 });
+                occupations.Add(new Occupation { OccupationID = 2, Name = "Doctor", OccupationfactorID = 1 });
+                occupations.Add(new Occupation { OccupationID = 3, Name = "Author", OccupationfactorID = 2 });
+                occupations.Add(new Occupation { OccupationID = 4, Name = "Farmer", OccupationfactorID = 4 });
+                occupations.Add(new Occupation { OccupationID = 5, Name = "Mechanic", OccupationfactorID = 4 });
+                occupations.Add(new Occupation { OccupationID = 6, Name = "Florist", OccupationfactorID = 3 });
+                return occupations;
             }
 
         }
@@ -53,8 +61,14 @@ namespace TestTAL.Controllers
             }
             catch (Exception e)
             {
+                // if can't get DB instance working log the issue and return hard coded data.
                 _logger.LogError(e.StackTrace);
-                return Problem();
+                var occupationFactors = new List<OccupationFactor>();
+                occupationFactors.Add(new OccupationFactor { OccupationFactorID = 1, Name = "Professional", Factor = 1 });
+                occupationFactors.Add(new OccupationFactor { OccupationFactorID = 2, Name = "White Collar", Factor = 1.25 });
+                occupationFactors.Add(new OccupationFactor { OccupationFactorID = 3, Name = "Light Manual", Factor = 1.5 });
+                occupationFactors.Add(new OccupationFactor { OccupationFactorID = 4, Name = "Heavy Manual", Factor = 1.75});
+                return occupationFactors;
             }
         }
     }
